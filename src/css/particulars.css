@@ -1,0 +1,311 @@
+/*头部 上*/
+header{
+	width: 100%;
+}
+header .head{
+	width: 100%;
+	height: 6.6rem;
+}
+header .head .head-top{
+	width: 100%;
+	height: 4rem;
+}
+.head-top-cont{
+	position: relative;
+}
+.head-top-first{
+	width: 90%;
+	margin: 0 5%;
+	height: 0.5rem;
+	position: absolute;
+	top: 0.3rem;
+}
+.head-top-list{
+	display: flex;
+	justify-content: space-between;
+}
+.head-top-list >div{
+	flex: 0 1 auto;
+}
+.head-top-list >div div{
+	float: left;
+}
+.head-top-share{
+	margin-right: 0.16rem;
+}
+.head-top-list img{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+.head-name{
+	width: 90%;
+	margin: 0 5%;
+	height: 1rem;
+	position: absolute;
+	top: 3.1rem;
+}
+.head-name-div{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.head-name-div div{
+	flex: 0 1 auto;
+}
+.head-name-div div:nth-child(1){
+	line-height: 1rem;
+	font-size:0.4rem ;
+	color: #FFFFFF;
+}
+.head-name-div img{
+	width: 1rem;
+	height: 1rem;
+}
+
+
+/*头部下*/
+.head-bottom{
+	width: 100%;
+	height: 2.6rem;
+	background: #FFFFFF;
+}
+.head-bot-list li:nth-child(1),.head-bot-list li:nth-child(2){
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #F4F4F4;
+}
+.head-bot-list li:nth-child(2) span{
+	font-size: 0.3rem ;
+}
+.li-coment,.li-name,.li-detalis{
+	width: 90%;
+	margin: 0 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.li-coment div,.li-name div,{
+	flex:  0 1 auto;
+}
+.li-detalis div{
+	flex:  0 1 auto;
+	line-height: 1rem;
+}
+.li-coment div img,.li-name div img,.li-detalis div img{
+	width: 0.3rem;
+	height: 0.3rem;
+}
+
+
+/*入住时间*/
+.sect-time{
+	width: 80%;
+	height: 0.87rem;
+	background: #FFFFFF;
+	margin: 0.16rem auto;
+	display: flex;
+	justify-content: space-around;
+}
+.sect-time div{
+	flex: 0 1 auto;
+}
+.sect-time div p:nth-child(1){
+	margin-left: 0.15rem;
+}
+.sect-time div p:nth-child(2){
+	color: #007AFF;
+}
+
+/*日历*/
+.mask{
+	width: 100%;
+	height: 15rem;
+	position: fixed;
+	bottom: 0;
+	background: black;
+	opacity: 0.3;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/*预定*/
+.sect-reserve{
+	background: #FFFFFF;
+	margin-bottom: 0.2rem;
+}
+.sect-reserve >div:nth-child(1){
+	width: 100;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #E4E4E4;
+}
+.reserve{
+	width: 90%;
+	margin: 0 5%;
+}
+.middle{
+	width: 100;
+	height: 2rem;
+}
+.middle .sect-tow{
+	width: 90%;
+	height: 2rem;
+	margin: 0 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.sect-cont ,.sect-right{
+	flex:  0 1 auto;
+}
+.sect-cont{
+	margin-top: 0.1rem;
+}
+.sect-right{
+	margin-top: 0.5rem;
+}
+.sect-righ div{
+	margin-top: 0.8rem;
+}
+.sect-cont p:nth-child(1){
+	font-size: 0.35rem;
+}
+.sect-cont p:last-child{
+	font-size: 0.4rem;
+	color: red;
+}
+.sect-right p:first-child{
+	display: block;
+	width: 1.4rem;
+	text-align: center;
+	color: red;
+}
+.sect-right p:last-child{
+	display: inline-block;
+	width: 1.4rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #FFFFFF;
+	background: #41C7FD;
+	border-radius: 0.08rem;
+	text-align: center;
+
+}
+
+
+/*弹出提示*/
+.popup{
+	width: 30%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background: black;
+	border-radius: 0.08rem;
+	text-align: center;
+	opacity: 0.3;
+	position: fixed;
+	color: #FFFFFF;
+	top: 70%;
+	left: 35%;
+	z-index: 3;
+	display: none;
+
+}
+/*附近酒店*/
+footer{
+	background: #FFFFFF;
+}
+.fot-h{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom:1px solid #E4E4E4 ;
+}
+.fot-h div{
+	width: 90%;
+	margin: 0 5%;
+}
+.fot-h img{
+	width: 0.3rem;
+	height: 0.3rem;
+}
+
+
+.fot-jiudian{
+	width: 100%;
+	height: 4.5rem;
+	border-bottom:1px solid #E4E4E4;
+	position: relative;
+}
+.fot-img img{
+	width: 100%;
+	height: 3rem;
+}
+
+.fot-img-user{
+	width: 90%;
+	margin: 0 5%;
+	position: absolute;
+	top: 47%;
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+}
+.fot-img-user a img{
+	width: 1rem;
+	height: 1rem;
+}
+.fot-img-user div{
+	flex:  0 1 auto;
+}
+.fot-img-pic{
+	margin-top: 0.3rem;
+	color: red;
+}
+.fot-img-pic span span{
+	font-size:0.4rem;
+}
+.fot-nearby{
+	width: 100%;
+}
+.fot-nearby div{
+	width: 90%;
+	margin: 0 5%;
+}
+.fot-nearby div p:nth-child(1){
+	font-size: 0.35rem;
+}
+.fot-nearby div p:nth-child(2){
+	color: #8E8E8E;
+	width: 100%;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap; 
+}
+.tese span:nth-child(1){
+	color: #ff9d19;
+}
+.tese span:nth-child(2){
+	color: #F6414D;
+	border: 1px solid #F6414D;
+	border-radius: 0.1rem;
+}
+.tese span:nth-child(3){
+	color: #DD61D9;
+	border: 1px solid #DD61D9;
+	border-radius: 0.1rem;
+}
+.fot-all{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: #FFFFFF;
+	text-align: center;
+	color: #41C7FD;
+}

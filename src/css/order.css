@@ -1,0 +1,150 @@
+/*我的订单导航栏*/
+.head ul{
+	width: 100%;
+	height: 0.6rem;
+	background: #FFFFFF;
+	margin-bottom: 0.25rem;
+}
+.head li{
+	line-height: 0.6rem;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 0.3rem;
+	
+}
+.select{
+	border-bottom: 1px solid #56C5ED;
+}
+/*遮罩层*/
+.mask{
+	
+}
+/*订单列表*/
+.order ul:first-child{
+	display: block;
+	background: #FFFFFF;
+}
+.order ul{
+	display: none;
+	background: #FFFFFF;
+}
+.list li{
+	height: 2rem;
+	border-bottom:1px solid #E4E4E4;
+}
+.list-cont{
+	width: 92%;
+	margin: 0 4% ;
+	padding-top: 4%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-details{
+	width: 60%;
+	flex: 0 1 auto;
+}
+..pic-btn{
+	width: 40%;
+	flex:  0 1 auto;
+}
+.detail-lt,.detail-rt{
+	float: left;
+}
+.detail-lt{
+	margin-right: 0.24rem;
+}
+.detail-lt a{
+	display: inline-block;
+	width:0.9rem;
+	height: 0.9rem;
+}
+.detail-lt a img{
+	width: 100%;
+	height: 100%;
+}
+
+.detail-rt p:first-child{
+	width: 3rem;
+	font-size: 0.3rem;
+	overflow:hidden;
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+}
+.detail-rt >span {
+	display: block;
+	font-size:0.12rem ;
+    color: #7E7E7E;
+}
+.detail-rt p{
+	font-size: 0.28rem;
+}
+.pic-btn p{
+	color: red;
+	text-align: end;
+}
+.pic-btn a,.pic-btn span{
+	float: right;
+	display: inline-block;
+	width: 1.2rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #FFFFFF;
+	border-radius: 0.1rem;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+.pic-btn span{
+	width: 1.2rem;
+	background: #67E1FF;
+}
+.pic-btn a{
+	background: #FD6261;
+	margin-left: 0.1rem;
+}
+
+
+
+
+/* 底部 */
+.foot{
+  width: 100%;
+  height: 1.3rem;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  display:block;
+}
+.foot-list{
+  height: 1.05rem;
+  display: flex;
+}
+.foot-list div{
+  margin: 0.105rem 0;
+  text-align: center;
+  flex-grow: 1;
+
+}
+.foot-list img{
+  width: 0.55rem;
+  height: 0.55rem;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.popup{
+	width: 3rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-radius: 0.125rem;
+	background: black;
+	opacity: 0.3;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 1rem auto;
+	position: fixed;
+	left: 30%;
+	top: 65%;
+	display: none;
+}

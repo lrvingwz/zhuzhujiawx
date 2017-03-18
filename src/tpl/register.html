@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes"/>
+    <link rel="stylesheet" type="text/css" href="../../libs/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- build:css css/app.material.css -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/register.css"/>
+</head>
+<body>
+	<header>
+		<div class="head">
+		  <div class="head-img">
+		  	<img src="../img/log-register/247374650953056219.png" />
+		  </div>
+		</div>
+	</header>
+	<article register">
+ 		<form class="form" method="post">
+		  <div class="">
+<!--		  	<img src="../img/log-register/20685675303688655.png"/>-->
+		    <input type="tel" class="tel" name="tel" placeholder="手机号码">
+		  </div>
+		  <div id="form-txt">
+		  	<!--<img src="../img/log-register/20685675303688655.png"/>-->
+		    <input type="text" class="txt" name="txt"  placeholder="验证码">
+		    <span class="ctxt">发送验证码</span>
+		  </div>
+		  <div class="">
+		  	<!--<img src="../img/log-register/20685675303688655.png"/>-->
+		    <input type="password" class="paswd" name="password"  placeholder="密码">
+		  </div>
+		  <div class="">
+		  	<!--<img src="../img/log-register/20685675303688655.png"/>-->
+		    <input type="password" class="cpaswd" name="cpassword"  placeholder="确认密码">
+		  </div>
+		  <div id="form-log">
+		    <p>已有账号前去<span>登录</span></p>
+		  </div>
+		  <div class="form-btn">
+		     <button type="button" class="" id="form-btn">表单注册</button>
+		  </div>
+		</form>
+    </article>
+    <footer>
+    	<div>
+    		<p>—————<span>其他登录方式</span>—————</p>
+    	</div>
+    	<div class="foot-list">
+    		<ul>
+    			<li class=""><a href=""><img src="../img/timg.jpg"/></a></li>
+    			<li class="foot-li"><a href=""><img src="../img/timg.jpg"/></a></li>
+    			<li class=""><a href=""><img src="../img/timg.jpg"/></a></li>
+    		</ul>
+    		<div class="popup"></div>
+    	</div>
+   	</footer>	
+</body>
+<!-- build:js js/libs/libs.min.js -->
+<script type="text/javascript" src="../../libs/jquery/dist/jquery.min.js" ></script>
+<script type="text/javascript" src="../../libs/bootstrap/dist/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="../js/register.js" ></script>
+<!-- /build  -->
+<script type="text/javascript">
+	(function (doc, win) {
+	    // 分辨率Resolution适配
+	    var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	            var clientWidth = docEl.clientWidth;
+	            if (!clientWidth) return;
+	            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+	        };
+	
+	    // Abort if browser does not support addEventListener
+	    if (!doc.addEventListener) return;
+	    win.addEventListener(resizeEvt, recalc, false);
+	    doc.addEventListener('DOMContentLoaded', recalc, false);
+	    
+	    // 一物理像素在不同屏幕的显示效果不一样。要根据devicePixelRatio来修改meta标签的scale,要注释上面的meta标签
+	    (function(){
+	        return;
+	        var dpr = scale =1;
+	         var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+	        var devicePixelRatio = win.devicePixelRatio;
+	        if (isIPhone) {
+	            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+	            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+	                dpr = 3;
+	            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+	                dpr = 2;
+	            } else {
+	                dpr = 1;
+	            }
+	        } else {
+	            // 其他设备下，仍旧使用1倍的方案
+	            dpr = 1;
+	        }
+	           scale = 1 / dpr;
+	           
+	           // 
+	           var metaEl = "";
+	           metaEl = doc.createElement('meta');
+	        metaEl.setAttribute('name', 'viewport');
+	        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+	        if (docEl.firstElementChild) {
+	            docEl.firstElementChild.appendChild(metaEl);
+	        } else {
+	            var wrap = doc.createElement('div');
+	            wrap.appendChild(metaEl);
+	            doc.write(wrap.innerHTML);
+	        }
+	    })();
+	        
+	})(document, window);    
+</script>
+</html>

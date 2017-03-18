@@ -1,0 +1,128 @@
+header{
+	width: 100%;
+}
+header div{
+	width: 0.6rem;
+	height: 0.6rem;
+	margin: 0.4rem auto 0.8rem;
+	border-radius: 50%;
+	background: url(../img/log-register/419673586026248907.png) no-repeat;
+	background-size:100% 100% ;
+}
+/*登录表单*/
+
+.login{
+	display: flex;
+	 justify-content:center;
+}
+.login .log-tel{
+	border-top-left-radius: 0.08rem;
+	border-top-right-radius: 0.08rem;
+	border-bottom: none;
+}
+.login .log-pasd{
+	border-bottom-left-radius: 0.08rem;
+	border-bottom-right-radius: 0.08rem;
+}
+.login .log-tel,.login .log-pasd{
+	overflow: hidden;
+	flex-grow: 1;
+	position: relative;
+}
+.login .log-tel img,.login .log-pasd img{
+	width: 0.16rem;
+	height: 0.16rem;
+	position: absolute;
+	top: 32%;
+	left: 5%;
+	z-index: 3;
+}
+.login div input{
+	display: block;
+	width: 2.6rem;
+	height: 0.5rem;
+	border: none;
+    z-index: 2;
+    text-indent: 0.4rem;
+    font-size: 0.16rem;
+}
+.login  button{
+	display: block;
+	width: 2.6rem;
+	height: 0.5rem;
+	margin: 0.4rem auto;
+	border: none;
+	border-radius: 0.04rem;
+	background: #FD6261;
+	color: #FFFFFF;
+	font-size: 0.22rem ;
+}
+.login .log-else{
+	display: flex;
+	justify-content:space-between;
+}
+.login .log-else a{
+	flex-grow: 1;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.login .log-else a:nth-child(1){
+	color: #FD6261;
+}
+.login .log-else a:nth-child(2){
+	color: #A0DDED;
+}
+
+
+/*其他登录方式*/
+footer div{
+	width: 100%;
+	
+}
+footer div:nth-child(1){
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	margin-bottom: 0.18rem;
+}
+footer div:nth-child(1) p{
+	flex: 0 1 auto;
+	
+}
+footer div:nth-child(1) p span{
+	margin: 0 0.12rem ;
+}
+footer div ul{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+}
+footer div ul li{
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius:50% ;
+	overflow: hidden;
+	flex: 0 1 auto;
+}
+footer div ul .foot-li{
+	margin: 0 0.5rem;
+}
+footer div ul li img{
+	width:100% ;
+	height: 100%;
+}
+
+.popup{
+	width: 1.6rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	border-radius: 0.05rem;
+	background: black;
+	opacity: 0.3;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0.4rem auto;
+	display: none;
+}

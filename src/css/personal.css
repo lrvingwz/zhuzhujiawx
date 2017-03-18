@@ -1,0 +1,55 @@
+
+/*我的列表*/
+.nav {
+	display: inline-block;
+	width: 100%;
+	margin: 0.2rem 0;
+	background: #FFFFFF;
+}
+.nav-margin{
+	width: 90%;
+	margin: 0 5%;
+	height: 0.98rem;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.nav-lt,.nav-rt{
+	line-height: 0.98rem;
+	flex: 0 1 auto;
+}
+
+.nav-lt img,.nav-rt img:last-child {
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.nav-rt img:first-child{
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.list1 li a{
+	display: inline-block;
+	width: 100%;
+	background: #FFFFFF;
+	border-bottom:1px solid #F4F4F4 ;
+}
+.list1 li {
+	width: 100%;
+	background: #FFFFFF;
+	border-bottom:1px solid #F4F4F4 ;
+}
+
+.nav-btm{
+	display: inline-block;
+	width: 100%;
+	background: #FFFFFF;
+}
+
+/*底部滑框*/
+.foot{
+	width: 100%;
+	border: 1px solid red;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+}
