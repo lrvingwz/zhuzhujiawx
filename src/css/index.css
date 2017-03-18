@@ -63,24 +63,23 @@ nav .nav-li a{
 /* 系统广告栏 */
 .nav-news{
   width: 100%;
-  height: 1.75rem;
+  height: 1.25rem;
   margin: 0.25rem 0 0.015rem; 
   background: #ffffff;
   position: relative;
 }
-.nav-news .nav-list{
+.nav-list{
   position: absolute;
   top: 0.25rem;
   left: 0.45rem;
   width: 90%;
   height: 0.75rem;
   line-height: 0.75rem;
-  font-size: 0.14rem;
   white-space:nowrap;
   text-overflow:ellipsis; 
   -o-text-overflow:ellipsis; 
   overflow: hidden;
-} 
+}
 .nav-list>div{width: 100%;height: 100%}
 .nav-list-left{
   display: inline-block;
@@ -91,9 +90,9 @@ nav .nav-li a{
   margin-right: 0.15rem;
 }
 .nav-list-a img{
-  width: 0.35rem;
-  height: 0.35rem;
-  margin:0 0.1rem; 
+  width: 0.5rem;
+  height: 0.5rem;
+  
 }
 
 /* 精品推荐 */
@@ -229,6 +228,9 @@ h4{
 .foot-list{
   height: 1.05rem;
   display: flex;
+}
+.foot-list div:nth-child(1) a span{
+	color: #00D7F5;
 }
 .foot-list div{
   margin: 0.105rem 0;

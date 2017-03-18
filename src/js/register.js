@@ -106,6 +106,9 @@ $(function(){
 		}
 
 	});
+	$("#form-log").on("touchend",function(){
+		window.location.href="../tpl/login.html";
+	});
 	function addCookie(name,value,days,path){   /**添加设置cookie**/  
 	    var name = escape(name);  
 	    var value = escape(value);  
